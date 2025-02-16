@@ -35,7 +35,8 @@ button {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* #region header */
@@ -121,6 +122,7 @@ button {
 /* #region hero */
 .hero {
   background-color: #2e2f42;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -131,8 +133,7 @@ button {
   text-align: center;
   color: #fff;
   padding-top: 188px;
-  padding-bottom: 48px;
-  margin: auto;
+  margin: 0 auto 48px auto;
   max-width: 496px;
 }
 .hero-btn {
@@ -145,7 +146,8 @@ button {
   background-color: #4d5ae5;
   width: 169px;
   height: 56px;
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -155,13 +157,19 @@ button {
 /* #endregion hero */
 
 /* #region description */
+
 .description-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.12;
-  letter-spacing: 0.02em;
   text-align: center;
-  color: #2e2f42;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .description-list {
@@ -170,7 +178,7 @@ button {
 }
 
 .description-list-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 
 .description-item-title {
@@ -180,7 +188,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding-top: 120px;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .description-item-text {
   font-weight: 400;
@@ -206,8 +214,7 @@ button {
   color: #2e2f42;
   text-transform: capitalize;
   padding-top: 120px;
-  padding-bottom: 72px;
-  margin: auto;
+  margin: 0 auto 72px;
 }
 
 .team-list {
@@ -220,6 +227,12 @@ button {
   background: #fff;
   text-transform: capitalize;
   border-radius: 0 0 4px 4px;
+}
+
+.team-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team-content {
@@ -267,9 +280,17 @@ button {
   padding-bottom: 120px;
 }
 
+.portfolio-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .portfolio-content {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: auto;
 }
 
 .portfolio-item-title {
@@ -292,6 +313,15 @@ button {
 /* #region footer */
 .page-footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 156px;
+  padding-right: auto;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo .logo-part {
@@ -304,5 +334,6 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  width: 264px;
 }
 /* #endregion footer */
